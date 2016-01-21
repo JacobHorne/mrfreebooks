@@ -1,0 +1,90 @@
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+
+.clearfix {
+    zoom: 1;
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+/***** SITE STYLES *************/
+/**********************************/
+
+.wrapper{
+	width:90%;
+	margin:0 auto;
+}
+
+#logo{
+	display:block;
+	width:90%;
+	max-width:500px;
+	margin:0 auto;
+	padding:30px;
+
+}
+
+img{
+	display:inline-block;
+	width:90%;
+	padding:10px;
+	border-radius:15px;
+}
+
+.book {
+	display: block;
+	opacity: 0;
+	transition: all ease-in 300ms;
+}
+
+.book.is-active {
+	opacity: 1;
+	transition: all ease-in 300ms;
+}
+
+button{
+	color:white;
+	background-color:black;
+	border:none;
+	border-radius:5px;
+	box-shadow: 1px 1px #b9adb1;
+	margin:2px;
+	padding:5px 10px;
+	&:hover{
+		opacity:0.6s;
+	}
+}
+.container{
+	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+	padding-top:50px;
+}
+
+@media screen and (min-width: 400px) {
+	
+	.book{
+		display:inline-block;
+		width:20%;
+		border-radius:10px;
+	}
+
+	img{
+		display:inline-block;
+		width:90%;
+		max-height: 300px;
+	}
+}
+
+
+
+
+
+
+
+
