@@ -1,8 +1,2 @@
-node_modules/
-dist/
-js/bower/
 .sass-cache/
-init.js
-main.css
-package.json
 **/.DS_Store
