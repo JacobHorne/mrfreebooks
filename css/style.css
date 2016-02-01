@@ -130,9 +130,9 @@ iframe {
   width: 70%;
   margin: 0 auto;
   margin-top: 20px;
-  height: 380px;
+  height: 0;
+  padding-top: 100%;
   border-radius: 5px;
-  max-width: 270px;
   -webkit-box-shadow: 10px 10px 5px -6px #b5b5b5;
   -moz-box-shadow: 10px 10px 5px -6px #b5b5b5;
   box-shadow: 2px 1px 1px -3px #b5b5b5;
@@ -195,10 +195,9 @@ iframe {
     width: 30%;
     margin: 5px 0px 5px 0px;
     display: inline-block;
-    height: 340px;
+    padding-top: 42.857%;
     border: 2px solid white;
     transition: 0.5s ease all;
-    max-width: 232px;
   }
   /* line 183, ../scss/style.scss */
   .container div:hover {
