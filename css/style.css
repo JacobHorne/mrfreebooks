@@ -1,27 +1,32 @@
 /***** CLEARFIX is applied to the parent of floated elements *************/
 /*************************************************************************/
-/* line 8, ../scss/style.scss */
+/* line 11, ../scss/style.scss */
 .clearfix {
   zoom: 1;
 }
-/* line 10, ../scss/style.scss */
+/* line 13, ../scss/style.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
-/* line 14, ../scss/style.scss */
+/* line 17, ../scss/style.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 19, ../scss/style.scss */
+/* line 22, ../scss/style.scss */
 iframe {
   display: none;
 }
 
+/* line 25, ../scss/style.scss */
+body {
+  background-color: #f8f9f8;
+}
+
 /***** SITE STYLES *************/
 /**********************************/
-/* line 29, ../scss/style.scss */
+/* line 35, ../scss/style.scss */
 .wrapper {
   position: relative;
   width: 90%;
@@ -30,21 +35,21 @@ iframe {
   padding-top: 100px;
 }
 
-/* line 37, ../scss/style.scss */
+/* line 43, ../scss/style.scss */
 .navigation {
   position: absolute;
   top: 0px;
   right: 2%;
   padding: 10px 0px 5px 0px;
 }
-/* line 42, ../scss/style.scss */
+/* line 48, ../scss/style.scss */
 .navigation input {
   width: 112px;
   padding: 2px;
   border: 2px solid #21201f;
   border-radius: 5px;
 }
-/* line 48, ../scss/style.scss */
+/* line 54, ../scss/style.scss */
 .navigation .search-button {
   width: 45px;
   text-align: center;
@@ -58,57 +63,58 @@ iframe {
   margin: 1px;
   padding: 6px 10px;
 }
-/* line 60, ../scss/style.scss */
+/* line 66, ../scss/style.scss */
 .navigation .search-button:hover {
   opacity: 0.6;
 }
 
-/* line 65, ../scss/style.scss */
+/* line 71, ../scss/style.scss */
 .menu-icon {
   position: absolute;
   top: 14px;
   left: 0px;
 }
-/* line 69, ../scss/style.scss */
+/* line 75, ../scss/style.scss */
 .menu-icon img {
   width: 90px;
 }
 
-/* line 73, ../scss/style.scss */
+/* line 79, ../scss/style.scss */
 .social-media {
   position: absolute;
   right: 2%;
   top: 35px;
 }
-/* line 77, ../scss/style.scss */
+/* line 83, ../scss/style.scss */
 .social-media a {
   display: inline-block;
   margin: 0px 5px;
 }
-/* line 81, ../scss/style.scss */
+/* line 87, ../scss/style.scss */
 .social-media img {
   width: 15px;
   padding: 5px;
 }
-/* line 84, ../scss/style.scss */
+/* line 90, ../scss/style.scss */
 .social-media img:hover {
   border: none;
 }
 
-/* line 90, ../scss/style.scss */
+/* line 95, ../scss/style.scss */
 .logo {
   display: block;
   width: 95%;
   max-width: 500px;
   margin: 0 auto;
   padding: 10px 0px 30px 0px;
+  border-bottom: 1px solid #cccdcb;
 }
 
-/* line 97, ../scss/style.scss */
+/* line 103, ../scss/style.scss */
 .category-container {
   display: none;
 }
-/* line 99, ../scss/style.scss */
+/* line 105, ../scss/style.scss */
 .category-container button {
   color: white;
   background-color: #21201f;
@@ -118,48 +124,69 @@ iframe {
   padding: 5px 10px;
   font-size: 0.9em;
 }
-/* line 107, ../scss/style.scss */
+/* line 113, ../scss/style.scss */
 .category-container button:hover {
   opacity: 0.8;
 }
 
-/* line 114, ../scss/style.scss */
-.container div {
-  background-size: cover;
-  background-position: center center;
-  width: 70%;
-  margin: 0 auto;
-  margin-top: 20px;
-  height: 380px;
+/* line 118, ../scss/style.scss */
+.container {
+  padding-top: 40px;
+}
+/* line 120, ../scss/style.scss */
+.container a {
+  display: block;
+  border: 1px solid #cccdcb;
   border-radius: 5px;
-  max-width: 270px;
+}
+/* line 125, ../scss/style.scss */
+.container div {
+  width: 63%;
+  padding-top: 90%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  border-radius: 5px;
   -webkit-box-shadow: 10px 10px 5px -6px #b5b5b5;
   -moz-box-shadow: 10px 10px 5px -6px #b5b5b5;
-  box-shadow: 2px 1px 1px -3px #b5b5b5;
+  box-shadow: 2px 1px 1px 0.5px #b5b5b5;
 }
-/* line 128, ../scss/style.scss */
+/* line 136, ../scss/style.scss */
+.container img {
+  display: block;
+  margin: 10px;
+}
+/* line 140, ../scss/style.scss */
 .container .alink {
   opacity: 0;
   transition: all ease-in 300ms;
 }
-/* line 133, ../scss/style.scss */
+/* line 145, ../scss/style.scss */
 .container .alink.is-active {
   opacity: 1;
   transition: all ease-in 300ms;
 }
 
 @media screen and (min-width: 600px) {
-  /* line 140, ../scss/style.scss */
+  /* line 152, ../scss/style.scss */
   .menu-icon {
     display: none;
   }
 
-  /* line 143, ../scss/style.scss */
+  /* line 155, ../scss/style.scss */
+  .logo {
+    border-bottom: none;
+    padding: 10px 0px 0px 0px;
+  }
+
+  /* line 159, ../scss/style.scss */
   .category-container {
     display: block;
+    width: 98.5%;
     padding: 40px 0px;
+    border-bottom: 1px solid #cccdcb;
   }
-  /* line 146, ../scss/style.scss */
+  /* line 164, ../scss/style.scss */
   .category-container button {
     color: white;
     background-color: #222222;
@@ -169,44 +196,54 @@ iframe {
     padding: 5px 10px;
     font-size: 0.9em;
   }
-  /* line 154, ../scss/style.scss */
+  /* line 172, ../scss/style.scss */
   .category-container button:hover {
     opacity: 0.8;
   }
 
-  /* line 160, ../scss/style.scss */
+  /* line 178, ../scss/style.scss */
   .social-media img {
     width: 25px;
     padding: 4px;
   }
-  /* line 163, ../scss/style.scss */
+  /* line 181, ../scss/style.scss */
   .social-media img:hover {
     border: none;
   }
 
-  /* line 169, ../scss/style.scss */
+  /* line 187, ../scss/style.scss */
   iframe {
     display: inline-block;
     border-radius: 5px;
   }
 
-  /* line 175, ../scss/style.scss */
+  /* line 192, ../scss/style.scss */
+  .container {
+    width: 96%;
+    margin: 0 auto;
+  }
+  /* line 195, ../scss/style.scss */
+  .container a {
+    border: none;
+  }
+  /* line 198, ../scss/style.scss */
   .container div {
-    width: 30%;
-    margin: 5px 0px 5px 0px;
-    display: inline-block;
-    height: 340px;
+    margin: 0px;
+    width: 23.1%;
+    padding-top: 33.5%;
+    float: left;
+    margin: 3px 0px 3px 1%;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
     border: 2px solid white;
     transition: 0.5s ease all;
-    max-width: 232px;
   }
-  /* line 183, ../scss/style.scss */
+  /* line 207, ../scss/style.scss */
   .container div:hover {
-    border: 2px solid #bfbfbf;
+    border: 2px solid #737376;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 191, ../scss/style.scss */
+  /* line 215, ../scss/style.scss */
   .container div {
     margin: 5px 0.3% 5px 0px;
   }

@@ -14,11 +14,12 @@ var books = [
 
   //History
   { title: 'Nikola Tesla', url: 'http://amzn.to/1OE6YSa', category: 'history', img: 'http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00CATSONE&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thoughtsharkc-20' },
+  { title: 'Lewis and Clark', url: 'http://amzn.to/1JgbBF9', category: 'history', img:'http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0194QVC7A&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thoughtsharkc-20'},
   { title: 'Darwin', url: 'http://amzn.to/1P3HBgf', category: 'history', img: 'http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B008478VE8&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thoughtsharkc-20'},
   { title: 'Meditations', url: 'http://amzn.to/1OE7RtM', category: 'history', img: 'http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00IMLL63O&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thoughtsharkc-20' },
   { title: 'The Legend of King Authur', url: 'http://amzn.to/1RyvGsY', category: 'history', img:'http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0083ZMP5C&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thoughtsharkc-20'},
   { title: 'The Art of War', url: 'http://amzn.to/1P3T5jF', category: 'history', img: 'http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0199LTIKI&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thoughtsharkc-20'},
-  { title: 'Lewis and Clark', url: 'http://amzn.to/1KUQ0xe', category: 'history', img: 'http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B004TQMFZO&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thoughtsharkc-20' },
+  
 
   //Mystery 
   { title: 'Once Gone by Blake Pierce', url: 'http://amzn.to/1SLRBgr', category: 'mystery', img: 'http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B01991O5UG&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thoughtsharkc-20' },
@@ -33,19 +34,23 @@ var books = [
   { title: 'the war planners by andrew watts', url: 'http://amzn.to/23vGQmp', category: 'suspence', img: 'http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00RC2GNCI&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thoughtsharkc-20' },
 
   //technology
-  { title: 'Mastering Excel Macros: Introduction', url: 'http://amzn.to/1JWbTRT', category: 'technology', img: 'http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00O2OOJ7A&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thoughtsharkc-20' },
-  { title: 'Java: Artificial Intelligence; Made Easy, w/ Java Programming', url: 'http://amzn.to/1KVbj1F', category: 'technology', img: 'http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B01A766DJS&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thoughtsharkc-20' },
+  { title: 'The 27+ Best Apps for Work', url: 'http://amzn.to/23vHa4B', category: 'technology', img: 'http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B012BT3KOK&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thoughtsharkc-20' },
+  { title: 'Linux: Learn Linux In 2 Hours: Including All Essential Command Lines. The Beginners Choice for the Linux System', url: 'http://amzn.to/23vHxMv', category: 'technology', img: 'http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00W3HNZWS&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thoughtsharkc-20' },
   { title: 'Python for Informatics: Exploring Information: Exploring Information', url: 'http://amzn.to/23vHGzE', category: 'technology', img: 'http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00K0O8HFQ&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thoughtsharkc-20' },
-  { title: 'Programming For Beginners Box Set: Learn HTML, HTML5 & CSS3, Java, PHP & MySQL, C#', url: 'http://amzn.to/1KVbWIv', category: 'technology', img: 'http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B011ETYQ1Y&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thoughtsharkc-20' },
+  { title: 'HTML: QuickStart Guide - Creating an Effective Website (Wordpress, XHTML, JQuery, ASP, Browsers, CSS, Javascript)', url: 'http://amzn.to/23vJvfN', category: 'technology', img: 'http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B01ACB7OMS&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thoughtsharkc-20' },
   
+
   //hobbies
-  
+  { title: 'Tiny Homes: Tiny Homes for Beginners, Join the Tiny House Movement', url: 'http://amzn.to/1nAsXTE', category: 'hobbies', img: 'http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B01AK3NE22&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thoughtsharkc-20' },
+  { title: 'Adult Coloring Books: Stress Relieving Patterns', url: 'http://amzn.to/23vIjJw', category: 'hobbies', img: 'http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B01AWLN98G&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thoughtsharkc-20' },
   { title: 'Homesteading For Beginners: A Homestead Survival Guide for the Backyard & Urban Farmer', url: 'http://amzn.to/1SLYCxW', category: 'hobbies', img: 'http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00OV8QE5C&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thoughtsharkc-20' },
 
 
   //education
   { title: 'GRE: What You Need to Know: An Introduction to the GRE Revised General Test (Kaplan Test Prep)', url: 'http://amzn.to/1nAvxsR', category: 'education', img: 'http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00A8ME0M4&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thoughtsharkc-20' },
+  // { title: 'Procrastination: Overcome Procrastination, Increase Productivity & Develop Time Management Strategies for Life', url: 'http://amzn.to/1WPIESy', category: 'hobbies', img: 'http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B012LEV79U&Format=_SL110_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thoughtsharkc-20' },
   { title: 'How to Beat a Speeding Ticket Book -Fight that Ticket and Win', url: 'http://amzn.to/1PD0jat', category: 'hobbies', img: 'http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00HBUIB7Q&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thoughtsharkc-20' },
+
 ];
 
 

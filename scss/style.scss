@@ -1,6 +1,9 @@
 @import "compass";
 
 $txtgrey:#21201f;
+$lightgrey:#cccdcb;
+$white:#f8f9f8;
+$black:#737376;
 
 /***** CLEARFIX is applied to the parent of floated elements *************/
 /*************************************************************************/
@@ -19,6 +22,9 @@ $txtgrey:#21201f;
 iframe{
 	display:none;
 }		
+body{
+	background-color:$white;
+}
 
 
 		
@@ -86,13 +92,13 @@ iframe{
 		}	
 	}
 }
-
 .logo{
 	display:block;
 	width:95%;
 	max-width:500px;
 	margin:0 auto;
 	padding: 10px 0px 30px 0px;
+	border-bottom: 1px solid $lightgrey;
 }
 .category-container{
 	display:none;
@@ -110,20 +116,26 @@ iframe{
 	}
 }
 .container{
-
+	padding-top:40px;
+	a{
+		display:block;
+		border:1px solid $lightgrey;
+		border-radius:5px;
+	}
 	div{
-		background-size: cover;
-		background-position:center center;
-        width:70%;
-        margin:0 auto;
-        margin-top: 20px;
-        height:380px;
+		width:63%;
+        padding-top:90%;
+   		background-size:cover;
+   		background-repeat:no-repeat;
+		margin:0 auto;
         border-radius:5px;
-        max-width: 270px;
         -webkit-box-shadow: 10px 10px 5px -6px rgba(181,181,181,1);
 		-moz-box-shadow: 10px 10px 5px -6px rgba(181,181,181,1);
-		box-shadow: 2px 1px 1px -3px rgba(181,181,181,1);
-
+		box-shadow: 2px 1px 1px 0.5px rgba(181,181,181,1);
+	}
+	img{
+		display: block;
+		margin:10px;
 	}
 	.alink{
 		opacity: 0;
@@ -140,9 +152,15 @@ iframe{
 	.menu-icon{
 		display:none;
 	}
+	.logo{
+		border-bottom: none;
+		padding:10px 0px 0px 0px;
+	}
 	.category-container{
 		display:block;
+		width:98.5%;
 		padding:40px 0px;
+		border-bottom: 1px solid $lightgrey;
 		button{
 			color:white;
 			background-color:#222222;
@@ -172,16 +190,22 @@ iframe{
 	}	
 
 	.container{
+		width:96%;
+		margin: 0 auto;
+		a{
+			border:none;
+		}
 		div{
-			width:30%;
-			margin:5px 0px 5px 0px;
-			display:inline-block;
-			height:340px;
+			margin:0px;
+			width:23.1%;
+			padding-top:33.5%;
+			float:left;
+			margin:3px 0px 3px 1%;
+			box-shadow:0 2px 5px 1px rgba(0,0,0,0.2);
 			border: 2px solid white;
 			transition: 0.5s ease all; 
-			max-width: 232px;
 			&:hover{
-				border:2px solid #bfbfbf;
+				border:2px solid $black;
 			}
 		}
 	}

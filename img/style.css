@@ -1,0 +1,88 @@
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+/* line 6, ../scss/style.scss */
+.clearfix {
+  zoom: 1;
+}
+/* line 8, ../scss/style.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 12, ../scss/style.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/***** SITE STYLES *************/
+/**********************************/
+/* line 21, ../scss/style.scss */
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 26, ../scss/style.scss */
+#logo {
+  display: block;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/* line 35, ../scss/style.scss */
+img {
+  display: inline-block;
+  width: 90%;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+/* line 42, ../scss/style.scss */
+.book {
+  display: block;
+  opacity: 0;
+  transition: all ease-in 300ms;
+}
+
+/* line 48, ../scss/style.scss */
+.book.is-active {
+  opacity: 1;
+  transition: all ease-in 300ms;
+}
+
+/* line 53, ../scss/style.scss */
+button {
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px #b9adb1;
+  margin: 2px;
+  padding: 5px 10px;
+}
+
+/* line 62, ../scss/style.scss */
+.container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 50px;
+}
+
+@media screen and (min-width: 400px) {
+  /* line 71, ../scss/style.scss */
+  .book {
+    display: inline-block;
+    width: 20%;
+    border-radius: 10px;
+  }
+
+  /* line 77, ../scss/style.scss */
+  img {
+    display: inline-block;
+    width: 90%;
+    max-height: 300px;
+  }
+}
