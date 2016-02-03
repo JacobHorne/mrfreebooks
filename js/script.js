@@ -2,15 +2,33 @@
 
 (function( window, undefined ){
 
+//Code for slideout for Movbile Nav.
+var slideout = new Slideout({
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('menu'),
+    'padding': 256,
+    'tolerance': 70,
+});
+
+
+$('#menu-icon').on('click', function() {
+    slideout.toggle();
+    $("#menu-icon").hide();
+    e.preventDefault();
+});
+
+$('#close').on('click', function() {
+    slideout.close();
+});
+
+
+
 
 //Book Object
 
 var $container = $('#container');
 
 var books = [
-
-
-
 
   //History
   { title: 'Nikola Tesla', url: 'http://amzn.to/1OE6YSa', category: 'history', img: 'http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00CATSONE&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thoughtsharkc-20' },
