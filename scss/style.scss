@@ -261,8 +261,8 @@ input{
 		}
 		div{
 			margin:0px;
-			width:15%;
-			padding-top:22.5%;
+			width: 23%;
+   			padding-top: 37.5%;
 			float:left;
 			margin:3px 0px 3px 1%;
 			box-shadow:0 2px 5px 1px rgba(0,0,0,0.2);
@@ -277,7 +277,17 @@ input{
 @media screen and (min-width: 1200px) {
 		.container{
 		div{
-			margin:5px 0.3% 5px 0px;
+			margin:0px;
+			width:15%;
+			padding-top:22.5%;
+			float:left;
+			margin:3px 0px 3px 1%;
+			box-shadow:0 2px 5px 1px rgba(0,0,0,0.2);
+			border: 2px solid white;
+			transition: 0.5s ease all; 
+			&:hover{
+				border:2px solid $black;
+			}
 		}
 	}
 }
